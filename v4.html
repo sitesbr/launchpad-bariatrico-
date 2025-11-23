@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Health Starter Pack - Presença Digital para Profissionais de Saúde</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Sua Presença Digital Profissional em 7-14 Dias</h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Site one-page + Google Maps + Link na Bio - Sem precisar virar marqueteiro</p>
+            <a href="#cta" class="bg-white text-primary font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">Quero Começar</a>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Para Profissionais Como Você</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <i data-feather="heart" class="w-12 h-12 mx-auto text-primary mb-4"></i>
+                    <h3 class="font-bold text-gray-800">Nutricionistas</h3>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <i data-feather="activity" class="w-12 h-12 mx-auto text-primary mb-4"></i>
+                    <h3 class="font-bold text-gray-800">Fisioterapeutas</h3>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <i data-feather="smile" class="w-12 h-12 mx-auto text-primary mb-4"></i>
+                    <h3 class="font-bold text-gray-800">Dermatologistas</h3>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <i data-feather="brain" class="w-12 h-12 mx-auto text-primary mb-4"></i>
+                    <h3 class="font-bold text-gray-800">Psicólogos</h3>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <i data-feather="tooth" class="w-12 h-12 mx-auto text-primary mb-4"></i>
+                    <h3 class="font-bold text-gray-800">Dentistas</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Supere Seus Desafios Digitais</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Problemas Comuns</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-feather="x" class="text-red-500 mr-3 mt-1"></i>
+                            <span>Site amador ou inexistente</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="x" class="text-red-500 mr-3 mt-1"></i>
+                            <span>Dificuldade em aparecer no Google/Maps</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="x" class="text-red-500 mr-3 mt-1"></i>
+                            <span>Dependência de indicações boca a boca</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Nossa Solução</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-3 mt-1"></i>
+                            <span>Site profissional one-page</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-3 mt-1"></i>
+                            <span>Perfil otimizado no Google/Maps</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-3 mt-1"></i>
+                            <span>Link na bio profissional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O Que Você Vai Receber</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="globe" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Site One-Page</h3>
+                    <p class="text-gray-600">Página profissional com: apresentação, serviços, formas de contato e tudo alinhado com as normas do seu conselho.</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="map" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Google Business</h3>
+                    <p class="text-gray-600">Criação ou otimização do seu perfil no Google/Maps para aparecer quando pacientes buscarem por serviços como os seus.</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="link" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Link na Bio</h3>
+                    <p class="text-gray-600">Página centralizadora com todos os seus links importantes: site, WhatsApp, agendamento e redes sociais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Como Funciona</h2>
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-primary transform -translate-x-1/2"></div>
+                
+                <!-- Timeline Items -->
+                <div class="relative z-10 space-y-8 md:space-y-0">
+                    <!-- Item 1 -->
+                    <div class="md:flex justify-center mb-8">
+                        <div class="md:w-5/12 md:pr-12 md:text-right">
+                            <h3 class="text-xl font-bold text-gray-800">Dia 1-3: Onboarding</h3>
+                            <p class="text-gray-600">Você envia os materiais necessários via WhatsApp e preenche um breve questionário.</p>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-2/12">
+                            <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">
+                                1
+                            </div>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="md:flex justify-center mb-8">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:flex items-center justify-center w-2/12">
+                            <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">
+                                2
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 md:pl-12">
+                            <h3 class="text-xl font-bold text-gray-800">Dia 4-7: Desenvolvimento</h3>
+                            <p class="text-gray-600">Nossa equipe cria o rascunho do seu site e configura seu perfil no Google.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="md:flex justify-center mb-8">
+                        <div class="md:w-5/12 md:pr-12 md:text-right">
+                            <h3 class="text-xl font-bold text-gray-800">Dia 8-10: Revisão</h3>
+                            <p class="text-gray-600">Você revisa e envia ajustes. Fazemos as alterações necessárias.</p>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-2/12">
+                            <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">
+                                3
+                            </div>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="md:flex justify-center">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:flex items-center justify-center w-2/12">
+                            <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">
+                                4
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 md:pl-12">
+                            <h3 class="text-xl font-bold text-gray-800">Dia 11-14: Lançamento</h3>
+                            <p class="text-gray-600">Tudo é publicado e você recebe orientações finais para começar a usar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-primary bg-opacity-10 rounded-xl p-8 md:p-12">
+                <div class="md:flex items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                        <h2 class="text-3xl font-bold mb-4 text-gray-800">Totalmente Alinhado com as Normas</h2>
+                        <p class="text-gray-600 mb-6">Sua presença digital desenvolvida com cuidado para seguir:</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Regras do seu conselho profissional</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Lei Geral de Proteção de Dados (LGPD)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Boas práticas de comunicação em saúde</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-bold mb-4 text-gray-800">Exemplo de Disclaimer</h3>
+                            <p class="text-gray-600 italic">"Este conteúdo tem caráter informativo e não substitui uma consulta com profissional habilitado. Os resultados podem variar de acordo com cada organismo e condição de saúde."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para Transformar Sua Presença Digital?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Em 7-14 dias você terá tudo configurado com nosso suporte personalizado</p>
+            <div class="max-w-md mx-auto bg-white rounded-lg p-6 shadow-lg">
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Pagamento em até 12x</h3>
+                <p class="text-gray-600 mb-6">Via Hotmart com garantia e nota fiscal</p>
+                <a href="#" class="block w-full bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-dark transition duration-300 mb-3">
+                    Quero Começar Agora
+                </a>
+                <p class="text-sm text-gray-600">Suporte pessoal por WhatsApp durante toda a implantação</p>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
